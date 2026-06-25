@@ -6,7 +6,7 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "build": "node --check server.js && exit 1",
+    "build": "node -e \"process.exit(1)\"",
     "start": "node server.js",
     "dev": "node server.js"
   },
