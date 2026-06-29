@@ -1,0 +1,13 @@
+# Dependencies — platform runs install; never upload these
+node_modules/
+
+# Build output — platform runs `npm run build`
+dist/
+
+# Secrets — set these in the hosting UI, never commit
+.env
+.env.local
+
+# Logs / OS noise
+*.log
+.DS_Store
