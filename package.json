@@ -1,21 +1,16 @@
 {
   "name": "minimal-node-app",
+  "private": true,
   "version": "1.0.0",
-  "description": "A minimal TypeScript + Express app for exercising a Node.js hosting platform's build and publish process.",
-  "main": "dist/server.js",
+  "description": "Bare-bones Node.js HTTP server",
+  "type": "module",
+  "main": "server.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "dev": "tsc && node dist/server.js"
+    "build": "node --check server.js",
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "engines": {
-    "node": ">=20"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.16.0",
-    "express": "^4.19.2",
-    "typescript": "^5.6.3"
+    "node": ">=18"
   }
 }
